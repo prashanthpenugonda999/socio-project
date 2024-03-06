@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img id="logo" src="/letter-s.png" class="logo">
+            <ul>
+                <li><img class="logo-1" src="/email.png" alt=""></li>
+                <li><img class="logo-1" src="/icons8-bell-48.png" alt=""></li>
+                <li><img class="logo-1" src="/media.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img height="20px" width="20px" src="/search-interface-symbol.png">
+                <input type="text" placeholder="search" name="" id="">
+            </div>
+            <div class="nav-user-icon online" onclick="SettingsMenuToggle()">
+                <img src="/user5.jpg" alt="">
+            </div>
+        </div>
+        <!--settings menu-->
+        <div class="settings">
+            <div  class="nightmode " onclick="nightmode()">
+                <span></span>
+            </div>
+
+
+
+
+            <div class="settings-1">
+                <div class="user-profile">
+                    <img src="/user5.jpg" alt="">
+                    <div>
+                        <p>Prashanth</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile filter">
+                    <img src="/icons8-feedback-64.png" alt="">
+                    <div>
+                        <p>Feedback</p>
+                        <a href="#">Help Us To Improve</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links filter">
+                    <img class="setting-icon" src="/icons8-settings-50.png" alt="" class="setting-icon">
+                    <a href="#">Settings & Privacy <img src="/icons8-arrow-50.png" alt="" width="10px"></a>
+                </div>
+                <div class="settings-links filter">
+                    <img class="setting-icon"  src="/icons8-help-50.png" alt="" class="setting-icon">
+                    <a href="#">Help And Support<img src="/icons8-arrow-50.png" alt="" width="10px"></a>
+                </div>
+                <div class="settings-links filter">
+                    <img class="setting-icon"  src="/icons8-night-mode-50.png" alt="" class="setting-icon">
+                    <a href="#">Display <img src="/icons8-arrow-50.png" alt="" width="10px"></a>
+                </div>
+                <div class="settings-links filter">
+                    <img class="setting-icon"  src="/icons8-logout-52.png" alt="" class="setting-icon">
+                    <a href="#">Logout<img src="/icons8-arrow-50.png" alt="" width="10px"></a>
+                </div>
+    
+    
+    
+    
+
+            </div>
+            
+        </div>
+        
+
+
+
+
+    </nav>
+    <div class="container">
+        <!-- left side bar -->
+        <div class="left-sidebar">
+            <div class="imp-link">
+                <a href="#"><img src="/newspaper-folded.png" alt=""> Latest News</a>
+                <a href="#"><img src="/friends.png" alt=""> Friends</a>
+                <a href="#"><img src="/img1.png" alt=""> Group</a>
+                <a href="#"><img src="/cart 3.png" alt=""> Marketplace</a>
+                <a href="#"><img src="/television.png" alt=""> Watch</a>
+                <a href="#"><img src="" alt=""> See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href=""><img src="/letter-s.png" alt="">Web Developers</a>
+                <a href=""><img src="/logo-app.png" alt="">Web Design</a>
+                <a href=""><img src="/logo-design.png" alt="">Full Stack </a>
+                <a href=""><img src="/logo2.png" alt="">Web Developers</a>
+            </div>
+
+        </div>
+        <!-- info -->
+        <div class="info">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img id="more" src="/more.png" alt="">
+                    <p>Post Stories</p>
+                </div>
+                <div class="story story2">
+                    <img src="/user5.jpg" alt="">
+                    <p>Prashanth</p>
+                </div>
+                <div class="story story3">
+                    <img src="/user4.jpg" alt="">
+                    <p>emma</p>
+                </div>
+                <div class="story story4">
+                    <img src="/user2.jpg" alt="">
+                    <p>john</p>
+                </div>
+                <div class="story story5">
+                    <img id="profile1" src="/profile.jpg" alt="">
+                    <p>smith</p>
+                </div>
+            </div>
+
+
+
+            <div class="write">
+                <div class="user-profile">
+                    <img src="/user5.jpg" alt="">
+                    <div>
+                        <p>Prashanth</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <textarea placeholder="Say Something...." rows="3"></textarea>
+
+                    <div class="Add-post-links">
+                        <a href=""><img class="icon111" src="/icons8-video-48.png" alt="">Live Video</a>
+                        <a href=""><img class="icon111" src="/icons8-camera-50.png" alt="">Photo Video</a>
+                        <a href=""><img src="/icons8-happy-48.png" alt="">Activity </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/user4.jpg" alt="">
+                        <div>
+                            <p>emma</p>
+                            <span>September 7 2023, 20:00 PM</i></span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="p-text">Education <span>books</span> <a href="#">#software</a><a href="#">#coder</a></p>
+                <img class="post-img " id="img" src="/profile22.jpg"  alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img class="activity-img" src="/icons8-like-50.png" alt="">598</div>
+                        <div><img class="activity-img" src="/icons8-comments-48 (1).png" alt="">120</div>
+                        <div><img  class="activity-img" src="/icons8-share-50.png" alt="">22</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/profile22.jpg" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/user5.jpg" alt="">
+                        <div>
+                            <p>Prashanth</p>
+                            <span>June 11 2023, 16:00 PM</i></span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="p-text">prashanth <span>HI</span> <a href="#">#trending</a><a href="#">#coder</a></p>
+                <img class="post-img" src="/developer1.jpg" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img class="activity-img" src="/icons8-like-50.png" alt="">120</div>
+                        <div><img class="activity-img" src="/icons8-comments-48 (1).png" alt="">120</div>
+                        <div><img  class="activity-img" src="/icons8-share-50.png" alt="">120</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/user5.jpg" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/parrot.jpg" alt="">
+                        <div>
+                            <p>john</p>
+                            <span>July 22 2023, 11:00 PM</i></span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="p-text">john <span>Feeling happy</span> <a href="#">#trveler</a><a href="#">#tour</a></p>
+                <img class="post-img" src="/travel.jpg" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img class="activity-img" src="/icons8-like-50.png" alt="">35k</div>
+                        <div><img class="activity-img" src="/icons8-comments-48 (1).png" alt="">10k</div>
+                        <div><img  class="activity-img" src="/icons8-share-50.png" alt="">989</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/parrot.jpg" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/profile11.jpg" alt="">
+                        <div>
+                            <p>smith</p>
+                            <span>August 24 2023, 20:00 PM</i></span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="p-text">Beatiful mountains <span>tours</span> <a href="#">#trending</a><a href="#">#trvelling</a></p>
+                <img class="post-img" src="/travel2.jpg" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img class="activity-img" src="/icons8-like-50.png" alt="">120</div>
+                        <div><img class="activity-img" src="/icons8-comments-48 (1).png" alt="">14</div>
+                        <div><img  class="activity-img" src="/icons8-share-50.png" alt="">6</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/profile11.jpg" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/profile.jpg" alt="">
+                        <div>
+                            <p>Chandra Mouli</p>
+                            <span>December 2 2023, 20:00 PM</i></span>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="p-text">prashanth <span>HI</span> <a href="#">#trending</a><a href="#">#coder</a></p>
+                <img class="post-img" src="/profile.jpg" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img class="activity-img" src="/icons8-like-50.png" alt="">120</div>
+                        <div><img class="activity-img" src="/icons8-comments-48 (1).png" alt="">120</div>
+                        <div><img  class="activity-img" src="/icons8-share-50.png" alt="">120</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/profile.jpg" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="button">Load More</button>
+
+            
+
+        </div>
+        <!-- right side bar -->
+        <div class="right-sidebar">
+            <div class="side-bar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>Month</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <i class="fa-solid fa-house"></i>
+                    <p>Tech</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>Month</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketting</h4>
+                    <i class="fa-solid fa-house"></i>
+                    <p>Tech</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="side-bar-title">
+                <h4>Advertisement</h4>
+               
+                <a href="#" alt="">Close</a>
+            </div>
+            <img clas="sidebar-ads" src="/sftware.jpg" height="200" width="300" alt="">
+            <div class="side-bar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide chat</a>
+            </div>
+
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="/user5.jpg" alt="">
+                </div>
+                <p>Prashanth</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="/user4.jpg" alt="">
+                </div>
+                <p>Prashanth</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="/user2.jpg" alt="">
+                </div>
+                <p>Prashanth</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+<div class="footer">
+    <p>Copyright 2024 - Social App</p>
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>
