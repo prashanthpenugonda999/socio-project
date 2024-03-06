@@ -571,6 +571,9 @@ font-size: 12px;
     background: #ccc;
 }
 .activity-img1{
+    order: 1;
+    width: 20px;
+    height: 20px;
     filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(134deg) brightness(100%) contrast(100%);
 }
 .icon111{

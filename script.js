@@ -1,6 +1,9 @@
 var settings = document.querySelector(".settings");
 var mode = document.querySelector(".nightmode")
-const like = document.getElementsByClassName(".activity-img")
+var like = document.querySelectorAll(".activity-img")
+console.log(like)
+console.log(mode)
+
 
 
 
@@ -13,6 +16,11 @@ function SettingsMenuToggle(){
 function nightmode(){
     mode.classList.toggle("night-mode-on")
     document.body.classList.toggle("theme");
-    like.classList.add(".activity-img1")
+    for( let i of like){
+        console.log(i)
+        i.classList.toggle("activity-img1")
+    }
+    
+   
    
 }
